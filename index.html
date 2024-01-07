@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/Capture__1_-removebg-preview.png" type="image/x-icon">
+    <title>MY Portfolio</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/a79192aa68.js" crossorigin="anonymous"></script>
+    <!-- Remixicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css">
+
+    <!-------------------- CUSTOM CSS -------------------->
+    <link rel="stylesheet" href="Styling/style.css">
+
+    <!-- GOOGLE FONTS -->
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <!-- Rubik Doodle Shadow -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <!-- Bai Jamjuree -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--------------------------------------- CURSOR ------------------------------------>
+
+    <div class="cursor">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+
+    <!--------------------------------------- Header ------------------------------------>
+
+    <header class="header" id="header">
+        <nav class="nav-container px-3">
+
+            <a href="#" class="nav__logo">
+                <img src="Assets/navbar logo.jpg" alt="logo">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+
+                <span class="nav__title">Menu</span>
+
+                <span class="nav__name">Ammar</span>
+
+
+                <ul class="nav__list pt-3">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Me</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link nav__link-button">Contact Me</a>
+                    </li>
+                </ul>
+
+                <!-- Close Button -->
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+
+            </div>
+
+            <div class="nav__buttons">
+                <!-- Dark Mode Button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <!-- Toggle Button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- End of Header -->
+
+    <!--------------------------------------- Main --------------------------------------->
+
+    <main class="main" id="main">
+
+        <!--------------------------- Home ---------------------------------->
+        <section class="home section" id="home">
+
+            <div class="home__container container grid">
+
+                <h1 class="home__name">
+                    Ammar
+                </h1>
+
+                <div class="home__profile">
+                    <div class="home__image">
+
+                        <img src="Assets/home-image.jpg" alt="img" class="home__img">
+
+                        <div class="home__shadow"></div>
+
+                        <svg class="home__arrow" width="53" height="68" viewBox="0 0 53 68" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.00001 0.999988C6.91304 1.98551 26.6061 10.9359 27.0417 20.0833C27.223 23.8896 25.316 29.2172 22.1667 31.6666C15.4036 36.9267 4.17815 29.9088 13.5 23.5C18.7279 19.9058 26.1975 22.8211 31.4583 24.9583C38.5 28.5 38.5 28.5 43.3334 35.25C49 44.5 48.6119 57.8059 47.5 57.25"
+                                stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" />
+                            <path
+                                d="M49.75 64C48.6261 63.3881 40.1729 58.4261 41.125 59.1666C42.3712 60.136 43.7571 61.0071 44.875 62.125C46.1976 63.4476 47.8331 64.4164 49 65.875C50.0239 67.1549 52 58.7612 52 57.25"
+                                stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+
+                        <svg class="home__line" width="53" height="81" viewBox="0 0 53 81" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M51.0477 1.17087C40.4513 17.1607 29.0523 32.4971 19.0372 48.8629C13.2804 58.2703 -3.92008 86.412 2.91504 77.7563C14.1498 63.5292 23.3468 47.4314 33.901 32.6695C37.9902 26.9499 42.2523 21.395 46.5698 15.8481C48.2313 13.7136 49.8214 12.2153 47.4714 15.8092C36.9829 31.8496 25.4188 47.1543 14.8614 63.1553C13.7348 64.8628 10.6583 70.0727 12.1285 68.6502C17.5175 63.4362 22.0878 57.1433 26.7655 51.3269C32.3983 44.3228 37.6555 36.9359 43.6299 30.2146C45.776 27.8003 48.0708 24.232 50.6916 22.3437C55.3294 19.0022 45.7662 32.6808 42.8159 37.5768C37.9058 45.7249 32.2719 53.4829 27.191 61.523"
+                                stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+
+                        <div class="geometric-box"></div>
+                    </div>
+
+                    <div class="home__social">
+
+                        <a href="https://www.instagram.com/i_ammar_99/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/ch-ammar-a1115527b/" target="_blank"
+                            class="home__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+
+                        <a href="https://www.github.com/iammar99/" target="_blank" class="home__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="home__info">
+                    <p class="home__description">
+                        <b>Frontend Developer</b> , with knowledge in web
+                        development , I offer the best projects
+                        resulting in quality work.
+                    </p>
+
+                    <a href="#about" class="home__scroll">
+                        <div class="home__scroll-box">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+
+                        <span class="home__scroll-text">Scroll Down</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--------------------------- about ---------------------------------->
+        <section class="about section" id="about">
+
+            <div class="about__container container grid">
+                <h2 class="section__title-1">
+                    <span>About Me.</span>
+                </h2>
+
+                <div class="about__profile">
+                    <div class="about__image">
+                        <img src="Assets/About-image.jpg" alt="img" class="about__img">
+
+                        <div class="about__shadow"></div>
+
+                        <div class="geometric-box"></div>
+
+                        <svg class="about__line" width="53" height="81" viewBox="0 0 53 81" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M51.0477 1.17087C40.4513 17.1607 29.0523 32.4971 19.0372 48.8629C13.2804 58.2703 -3.92008 86.412 2.91504 77.7563C14.1498 63.5292 23.3468 47.4314 33.901 32.6695C37.9902 26.9499 42.2523 21.395 46.5698 15.8481C48.2313 13.7136 49.8214 12.2153 47.4714 15.8092C36.9829 31.8496 25.4188 47.1543 14.8614 63.1553C13.7348 64.8628 10.6583 70.0727 12.1285 68.6502C17.5175 63.4362 22.0878 57.1433 26.7655 51.3269C32.3983 44.3228 37.6555 36.9359 43.6299 30.2146C45.776 27.8003 48.0708 24.232 50.6916 22.3437C55.3294 19.0022 45.7662 32.6808 42.8159 37.5768C37.9058 45.7249 32.2719 53.4829 27.191 61.523"
+                                stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+
+                        <div class="about__box"></div>
+
+                    </div>
+                </div>
+
+                <div class="about__info">
+                    <p class="about__description">
+                        Passionate about creating <b>Web Pages</b> with
+                        <b>UI/UX User Interface</b>, I have years of
+                        experience.
+                    </p>
+
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <b>My Skills Are :</b> HTML, CSS, SCSS, Bootstrap, JavaScript,
+                            React, Git, Github & Firebase.
+                        </li>
+                    </ul>
+
+                    <div class="about__buttons">
+                        <a href="#contact" class="button">
+                            <i class="ri-send-plane-line"></i> Contact Me
+                        </a>
+
+                        <a href="Assets/CV.pdf" target="_blank" class="button__ghost ">
+                            Get Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--------------------------- services ---------------------------------->
+        <section class="services section" id="services">
+
+            <h2 class="section__title-2">
+                <span>Services.</span>
+            </h2>
+
+            <div class="services__container container grid">
+
+                <article class="services__card">
+                    <div class="services__border"></div>
+
+                    <div class="services__content">
+                        <div class="services__icon">
+                            <div class="services__box"></div>
+
+                            <i class="ri-code-box-line"></i>
+                        </div>
+
+                        <h2 class="services__title">Development</h2>
+
+                        <p class="services__description">
+                            Custom web development tailored to your
+                            specifications, designed to provide a
+                            flawless user experience.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="services__card">
+                    <div class="services__border"></div>
+
+                    <div class="services__content">
+                        <div class="services__icon">
+                            <div class="services__box"></div>
+
+                            <i class="ri-smartphone-line"></i>
+                        </div>
+
+                        <h2 class="services__title">Mobile App</h2>
+
+                        <p class="services__description">
+                            Design and transform website
+                            projects into mobile apps to
+                            provide a seamless user
+                            experience.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!--------------------------- Projects ---------------------------------->
+
+        <section class="projects section" id="projects">
+
+            <h2 class="section__title-1">
+                <span>Projects.</span>
+            </h2>
+
+            <div class="projects__container container grid">
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="Assets/todo.JPG" alt="img" class="projects__img">
+
+                        <a class="projects__button button" target="_blank" href="https://detailed-farmer.surge.sh/">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">Website</h3>
+                        <h2 class="projects__title">Todo Website</h2>
+
+                        <p class="projects__description">
+                            Efficient React-based Todo app with sleek UI, responsive design, smart filters, real-time
+                            updates, and intuitive task management for seamless
+                            productivity
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://detailed-farmer.surge.sh/" target="_blank" class="projects__link">
+                            <i class="ri-chrome-line"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="Assets/furniture.JPG" alt="img" class="projects__img">
+
+                        <a class="projects__button button" target="_blank" onclick="alert('Still under working')">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">Website</h3>
+                        <h2 class="projects__title">Furniture E-Commerce Website</h2>
+
+                        <p class="projects__description">
+                            Immerse in a modern React E-commerce experience for furniture. Explore curated collections,
+                            sleek designs, secure transactions, and personalized shopping for home elegance
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a target="_blank" class="projects__link" onclick="alert('Still under working')">
+                            <i class="ri-chrome-line"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="Assets/hackathon.JPG" alt="img" class="projects__img">
+
+                        <a class="projects__button button" target="_blank" href="https://hackathon-1320.surge.sh/">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">Website</h3>
+                        <h2 class="projects__title">Hackathon Website</h2>
+
+                        <p class="projects__description">
+                            Sleek HTML-powered hackathon platform. Streamlined experience for coders. Challenges,
+                            collaboration, and innovation made easy. Elevate your coding journey effortlessly
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://hackathon-1320.surge.sh/" target="_blank" class="projects__link">
+                            <i class="ri-chrome-line"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="Assets/webcrafter.JPG" alt="img" class="projects__img">
+
+                        <a class="projects__button button" target="_blank" href="https://official-site.surge.sh/">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">Website</h3>
+                        <h2 class="projects__title">Webcrafter Portfolio</h2>
+
+                        <p class="projects__description">
+                            Explore WebCrafterWebsite – a portfolio of digital prowess. Discover official projects,
+                            innovative designs, and a masterful blend of creativity and skill
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://official-site.surge.sh/" target="_blank" class="projects__link">
+                            <i class="ri-chrome-line"></i> View
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!--------------------------- contact ---------------------------------->
+        <section class="contact section" id="contact">
+
+            <div class="contact__container container grid">
+                <div class="contact__data">
+                    <h2 class="section__title-2">
+                        <span>Contact Me.</span>
+                    </h2>
+
+                    <p class="contact__description-1 contact__description">
+                        I will read all emails, Send me any,
+                        message yout want and I'll get back to you.
+                    </p>
+
+                    <p class="contact__description-2 contact__description">
+                        I need your <b>Name</b> and <b>Email Address</b>, but
+                        you won't revieve anything other than your reply.
+                    </p>
+
+                    <div class="geometric-box"></div>
+                </div>
+
+                <div class="contact__email">
+                    <h2 class="contact__title">
+                        Send Me A Message
+                    </h2>
+
+                    <form class="contact__form" id="contact-form">
+                        <div class="contact__group">
+                            <div class="contact__box">
+                                <input type="text" name="user_name" class="contact__input" id="name" required
+                                    placeholder="First Name">
+                                <label for="name" class="contact__label">First Name</label>
+                            </div>
+
+                            <div class="contact__box">
+                                <input type="email" name="user_email" class="contact__input" id="email" required
+                                    placeholder="Email Address">
+                                <label for="email" class="contact__label">Email Address</label>
+                            </div>
+                        </div>
+
+                        <div class="contact__box ">
+                            <input type="text" name="user_subject" class="contact__input" id="subject" required
+                                placeholder="Subject">
+                            <label for="subject" class="contact__label">Subject</label>
+                        </div>
+
+                        <div class="contact__box contact__area">
+                            <textarea name="user_message" id="message" class="contact__input" required
+                                placeholder="Message"></textarea>
+                            <label for="message" class="contact__label">Message</label>
+                        </div>
+
+                        <p class="contact__message" id="contact-message"></p>
+
+                        <button type="submit" class="contact__button button" id="contact-button">
+                            <i class="ri-send-plane-line"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact__social">
+
+                    <svg class="contact__social-arrow" width="53" height="68" viewBox="0 0 53 68" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.00001 0.999988C6.91304 1.98551 26.6061 10.9359 27.0417 20.0833C27.223 23.8896 25.316 29.2172 22.1667 31.6666C15.4036 36.9267 4.17815 29.9088 13.5 23.5C18.7279 19.9058 26.1975 22.8211 31.4583 24.9583C38.5 28.5 38.5 28.5 43.3334 35.25C49 44.5 48.6119 57.8059 47.5 57.25"
+                            stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" />
+                        <path
+                            d="M49.75 64C48.6261 63.3881 40.1729 58.4261 41.125 59.1666C42.3712 60.136 43.7571 61.0071 44.875 62.125C46.1976 63.4476 47.8331 64.4164 49 65.875C50.0239 67.1549 52 58.7612 52 57.25"
+                            stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+
+                    <div class="contact__social-data">
+                        <div>
+                            <p class="contact__social-description-1">
+                                Does not send emails
+                            </p>
+
+                            <p class="contact__social-description-1">
+                                Write me on my social networks
+                            </p>
+                        </div>
+
+                        <div class="contact__social-links">
+                            <a class="contact__social-link" href="https://www.instagram.com/i_ammar_99/"
+                                target="_blank">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+
+                            <a class="contact__social-link" href="https://www.linkedin.com/in/ch-ammar-a1115527b/"
+                                target="_blank">
+                                <i class="ri-linkedin-line"></i>
+                            </a>
+
+                            <a class="contact__social-link" href="https://www.github.com/iammar99/" target="_blank">
+                                <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!--------------------------------------- Footer ------------------------------->
+
+    <footer class="footer" id="footer">
+
+        <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+
+                <li>
+                    <a href="#services" class="footer__link">Services</a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="footer__link">Projects</a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; All Rights Reserved
+                <a href="">Ammar</a>
+            </span>
+        </div>
+
+    </footer>
+
+    <!------------- Scroll Up ---------------->
+
+    <a href="#" class="scrollUp" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+    </a>
+</body>
+<script>
+
+</script>
+<!------------- Scroll Reveal ---------------->
+<script src="scrollreveal.min.js"></script>
+<!-- Email Sending -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<!-- BOOSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- JS -->
+<script src="script.js"></script>
+<!-- IONICONS -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- IONICONS -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
