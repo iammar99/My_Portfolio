@@ -38,7 +38,11 @@ const sendEmail = (e) => {
     emailjs.sendForm('service_3g2e9sl', 'template_mfuvswl', '#contact-form', '715ijZbzCUnGRIiLh')
         .then(() => {
             // Show an alert when the message is sent successfully
-            window.alert('Message sent successfully!');
+            Swal.fire({
+                title: "Message Sent!",
+                text: "Thank you for reaching out to us. We appreciate your feedback and inquiries.",
+                icon: "success"
+              });
 
             setTimeout(() => {
                 contactMessage.innerHTML = '';
@@ -188,3 +192,24 @@ const scrollHeader = () => {
 };
 
 window.addEventListener('scroll', scrollHeader);
+
+
+/*=============== Toastify ===============*/
+
+const toastify = () => {
+    Toastify({
+        text: "Still Under Working",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+            background: "linear-gradient(to right, red, brown)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
+}
+
+

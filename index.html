@@ -12,7 +12,10 @@
     <script src="https://kit.fontawesome.com/a79192aa68.js" crossorigin="anonymous"></script>
     <!-- Remixicon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css">
-
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Sweet Alert -->
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <!-------------------- CUSTOM CSS -------------------->
     <link rel="stylesheet" href="Styling/style.css">
 
@@ -350,7 +353,7 @@
                     <div class="projects__image">
                         <img src="Assets/furniture.JPG" alt="img" class="projects__img">
 
-                        <a class="projects__button button" target="_blank" onclick="alert('Still under working')">
+                        <a class="projects__button button" target="_blank" onclick="toastify()">
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
@@ -366,7 +369,7 @@
                     </div>
 
                     <div class="projects__buttons">
-                        <a target="_blank" class="projects__link" onclick="alert('Still under working')">
+                        <a target="_blank" class="projects__link" onclick="toastify()">
                             <i class="ri-chrome-line"></i> View
                         </a>
                     </div>
@@ -505,7 +508,7 @@
                     <div class="contact__social-data">
                         <div>
                             <p class="contact__social-description-1">
-                                Does not send emails
+                                Doesn't want to  send emails
                             </p>
 
                             <p class="contact__social-description-1">
@@ -568,6 +571,8 @@
     <a href="#" class="scrollUp" id="scroll-up">
         <i class="ri-arrow-up-s-line"></i>
     </a>
+
+
 </body>
 <script>
 
@@ -586,5 +591,8 @@
 <!-- IONICONS -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+<!-- Toastify -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<!-- Sweet Alert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>
