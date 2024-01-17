@@ -1289,7 +1289,7 @@ footer {
     /* Servics */
 
     .services__container {
-        grid-template-columns: repeat(2, 250px);
+        grid-template-columns: repeat(1, 250px);
     }
 
     /* Projects */
@@ -1600,7 +1600,7 @@ footer {
     /* Services */
 
     .services__container {
-        grid-template-columns: repeat(2, 282px);
+        grid-template-columns: repeat(1, 282px);
         column-gap: 5rem;
         padding-block: 3rem 5rem;
     }

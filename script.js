@@ -42,7 +42,7 @@ const sendEmail = (e) => {
                 title: "Message Sent!",
                 text: "Thank you for reaching out to us. We appreciate your feedback and inquiries.",
                 icon: "success"
-              });
+            });
 
             setTimeout(() => {
                 contactMessage.innerHTML = '';
@@ -197,19 +197,11 @@ window.addEventListener('scroll', scrollHeader);
 /*=============== Toastify ===============*/
 
 const toastify = () => {
-    Toastify({
-        text: "Still Under Working",
-        duration: 3000,
-        destination: "https://github.com/apvarun/toastify-js",
-        close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        style: {
-            background: "linear-gradient(to right, red, brown)",
-        },
-        onClick: function(){} // Callback after click
-      }).showToast();
+    Swal.fire({
+        title: "Notification!",
+        text: "This website is still under working . It is almost completed and working . Only few things are under construction",
+        icon: "error"
+    });
 }
 
 
