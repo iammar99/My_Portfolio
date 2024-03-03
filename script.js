@@ -203,5 +203,3 @@ const toastify = () => {
         icon: "error"
     });
 }
-
-
