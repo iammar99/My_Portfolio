@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="sweetalert2.min.css">
     <!-------------------- CUSTOM CSS -------------------->
     <link rel="stylesheet" href="Styling/style.css">
+    <link rel="stylesheet" href="Styling/projects.css">
 
     <!-- GOOGLE FONTS -->
     <!-- Montserrat -->
@@ -180,6 +181,21 @@
                             <i class="ri-github-line"></i>
                         </a>
 
+                        <a href="https://leetcode.com/u/ammarbashaar99/" target="_blank" class="home__social-link">
+
+                            <svg fill="#ffffff" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"
+                                stroke="#ffffff" stroke-width="0.00024000000000000003">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z">
+                                    </path>
+                                </g>
+                            </svg>
+
+                        </a>
+
                     </div>
                 </div>
 
@@ -240,7 +256,7 @@
 
                     <ul class="about__list">
                         <li class="about__item">
-                            <b>My Skills Are :</b> HTML, CSS, SCSS, Bootstrap, JavaScript,
+                            <b>My Skills Are :</b> HTML, CSS, SCSS, Bootstrap, JavaScript, C++,
                             React, Git, Github & Firebase.
                         </li>
                     </ul>
@@ -321,11 +337,28 @@
                 <span>Projects.</span>
             </h2>
 
-            <div class="projects__container container grid">
+
+            <center>
+                <div class="tabs mt-5 " id="filter-buttons">
+                    <input type="radio" id="radio-1" name="tabs" checked />
+                    <label class="tab filter-button" for="radio-1" data-filter="*">All</label>
+                    <input type="radio" id="radio-2" name="tabs" />
+                    <label class="tab filter-button" for="radio-2" data-filter=".html">HTML</label>
+                    <input type="radio" id="radio-3" name="tabs" />
+                    <label class="tab filter-button" for="radio-3" data-filter=".react">React</label>
+                    <input type="radio" id="radio-4" name="tabs" />
+                    <label class="tab filter-button" for="radio-4" data-filter=".hackathon">Hackathon</label>
+                    <span class="glider"></span>
+                </div>
+            </center>
+
+
+            <div class="projects__container container" id="filterable-cards">
+
 
                 <!-- BR Archietect -->
 
-                <article class="projects__card">
+                <article class="projects__card html" data-name="html">
                     <div class="projects__image">
                         <img src="Assets/architect.jpg" alt="img" class="projects__img">
 
@@ -339,7 +372,8 @@
                         <h2 class="projects__title">BR Archietect</h2>
 
                         <p class="projects__description">
-                            Elevate spaces with BR Architect's innovative designs, blending form and function to create
+                            Elevate spaces with BR Architect's innovative designs, blending form and function to
+                            create
                             harmonious environments that inspire and endure.
                         </p>
                     </div>
@@ -354,7 +388,7 @@
 
                 <!-- Hackathon -->
 
-                <article class="projects__card">
+                <article class="projects__card hackathon" data-name="hackathon">
                     <div class="projects__image">
                         <img src="Assets/hackathon.JPG" alt="img" class="projects__img">
 
@@ -382,7 +416,7 @@
 
                 <!-- WebCrafter Portfolio -->
 
-                <article class="projects__card">
+                <article class="projects__card html" data-name="html">
                     <div class="projects__image">
                         <img src="Assets/webcrafter.JPG" alt="img" class="projects__img">
 
@@ -411,12 +445,11 @@
 
                 <!-- Portfolio -->
 
-                <article class="projects__card">
+                <article class="projects__card hackathon" data-name="hackathon">
                     <div class="projects__image">
                         <img src="Assets/sir's-portfolio.JPG" alt="img" class="projects__img">
 
-                        <a class="projects__button button" target="_blank"
-                            href="https://portfolio-clone.surge.sh/">
+                        <a class="projects__button button" target="_blank" href="https://portfolio-clone.surge.sh/">
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
@@ -426,14 +459,14 @@
                         <h2 class="projects__title">Portfolio Clone</h2>
 
                         <p class="projects__description">
-                            HTML/CSS portfolio clone showcasing design skills and coding proficiency, offering a glimpse
+                            HTML/CSS portfolio clone showcasing design skills and coding proficiency, offering a
+                            glimpse
                             into creative abilities and project expertise
                         </p>
                     </div>
 
                     <div class="projects__buttons">
-                        <a target="_blank" class="projects__link"
-                            href="https://portfolio-clone.surge.sh/">
+                        <a target="_blank" class="projects__link" href="https://portfolio-clone.surge.sh/">
                             <i class="ri-chrome-line"></i> View
                         </a>
                     </div>
@@ -443,7 +476,7 @@
 
                 <!-- Todo -->
 
-                <article class="projects__card">
+                <article class="projects__card react" data-name="react">
                     <div class="projects__image">
                         <img src="Assets/todo.JPG" alt="img" class="projects__img">
 
@@ -457,7 +490,8 @@
                         <h2 class="projects__title">Todo Website</h2>
 
                         <p class="projects__description">
-                            Efficient React-based Todo app with sleek UI, responsive design, smart filters, real-time
+                            Efficient React-based Todo app with sleek UI, responsive design, smart filters,
+                            real-time
                             updates, and intuitive task management for seamless
                             productivity
                         </p>
@@ -472,7 +506,7 @@
 
                 <!-- Ecommerce -->
 
-                <article class="projects__card">
+                <article class="projects__card react" data-name="react">
                     <div class="projects__image">
                         <img src="Assets/furniture.JPG" alt="img" class="projects__img">
 
@@ -487,7 +521,8 @@
                         <h2 class="projects__title">Furniture E-Commerce Website</h2>
 
                         <p class="projects__description">
-                            Immerse in a modern React E-commerce experience for furniture. Explore curated collections,
+                            Immerse in a modern React E-commerce experience for furniture. Explore curated
+                            collections,
                             sleek designs, secure transactions, and personalized shopping for home elegance
                         </p>
                     </div>
@@ -502,7 +537,7 @@
 
                 <!-- Smart Watch E-commerce Website -->
 
-                <article class="projects__card">
+                <article class="projects__card react" data-name="react">
                     <div class="projects__image">
                         <img src="Assets/eStore.JPG" alt="img" class="projects__img">
 
@@ -527,6 +562,8 @@
                         </a>
                     </div>
                 </article>
+
+
             </div>
 
         </section>
@@ -630,6 +667,21 @@
                             <a class="contact__social-link" href="https://www.github.com/iammar99/" target="_blank">
                                 <i class="ri-github-line"></i>
                             </a>
+
+                            <a href="https://leetcode.com/u/ammarbashaar99/" target="_blank" class="home__social-link">
+
+                                <svg fill="#ffffff" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"
+                                    stroke="#ffffff" stroke-width="0.00024000000000000003">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z">
+                                        </path>
+                                    </g>
+                                </svg>
+
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -672,7 +724,6 @@
         <i class="ri-arrow-up-s-line"></i>
     </a>
 
-
 </body>
 <script>
 
@@ -695,5 +746,55 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 <!-- Sweet Alert -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Isotope Filter Link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+<!-- Isotope Filter Effect -->
+<script type="text/javascript">
+    var $projectsContainer = $('.projects__container').isotope({
+
+        itemSelector: '.projects__card',
+        layoutMode: 'fitRows'
+    })
+
+    $('.tabs .tab').on('click', function () {
+        $('.tabs .tab').removeClass("active")
+
+        var value = $(this).attr('data-filter')
+        $projectsContainer.isotope({
+            filter: value
+        })
+    })
+</script>
+
+
+<script>
+    // Select relevant HTML elements
+    const filterButtons = document.querySelectorAll("#filter-buttons label");
+    const filterableCards = document.querySelectorAll("#filterable-cards .projects__card");
+
+    // Function to filter cards based on filter buttons
+    const filterCards = (e) => {
+        document.querySelector("#filter-buttons .active").classList.remove("active");
+        e.target.classList.add("active");
+
+        filterableCards.forEach(card => {
+            // show the card if it matches the clicked filter or show all cards if "all" filter is clicked
+            if (card.dataset.name === e.target.dataset.filter || e.target.dataset.filter === "all") {
+                return card.classList.replace("hide", "show");
+            }
+            card.classList.add("hide");
+        });
+    }
+
+    filterButtons.forEach(button => button.addEventListener("click", filterCards));
+    
+</script>
+
+<script>
+
+</script>
 
 </html>

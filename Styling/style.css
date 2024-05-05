@@ -262,7 +262,7 @@ button {
 .cursor {
     pointer-events: none;
     position: fixed;
-    display: block;
+    display: none;
     border-radius: 0;
     top: 0;
     left: 0;
@@ -511,9 +511,16 @@ nav {
     color: var(--white-color);
     font-size: 1.25rem;
     padding: 6px 10px;
+    width: 45px;
+    height: 45px;
     display: grid;
     place-content: center;
     transition: background-color .3s;
+}
+
+.home__social-link svg {
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
 .home__social-link:hover {
@@ -791,26 +798,142 @@ nav {
 
 /******************************  Projects  **********************************************/
 
+/* Nav */
+
+/* .projects-nav {
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.tabs {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0.75rem;
+    /* just a high number to create pill effect */
+}
+
+.tabs * {
+    z-index: 2;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    width: 200px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 99px;
+    color: var(--text-color);
+    /* just a high number to create pill effect */
+    transition: color 0.15s ease-in;
+}
+
+input[type="radio"]:checked+label {
+    color: var(--title-color);
+}
+
+input[id="radio-1"]:checked~.glider {
+    transform: translateX(-150%);
+}
+
+input[id="radio-2"]:checked~.glider {
+    transform: translateX(-50%);
+}
+
+input[id="radio-3"]:checked~.glider {
+    transform: translateX(50%);
+}
+
+input[id="radio-4"]:checked~.glider {
+    transform: translateX(150%);
+}
+
+.glider {
+    position: absolute;
+    display: flex;
+    height: 54px;
+    width: 200px;
+    background-color: var(--first-color);
+    z-index: 1;
+    border-radius: 99px;
+    /* just a high number to create pill effect */
+    transition: all 0.25s ease-out;
+}
+
+@media (max-width: 700px) {
+
+    .tabs {
+        transform: scale(0.6);
+        left: -90px;
+        font-size: 1rem;
+    }
+
+    .tab{
+        width: 130px;
+    }
+
+    .glider{
+        width: 130px;
+        transform-origin: center;
+        margin-left: 0 !important;
+    }
+}
+
+
 .projects {
     background-color: var(--container-color);
     transition: all .4s;
 }
 
 .projects__container {
+    display: flex;
+    justify-content: space-around !important;
+    flex-wrap: wrap;
     row-gap: 2rem;
 }
 
 .projects__card {
+    position: relative;
+    margin: 10px;
+    width: 30%;
     transform: scale(.9);
     transform-origin: left;
     padding: 1rem 1rem 2rem 1rem;
     background-color: var(--white-color);
-    margin-top: 10%;
-    transition: all .4s;
+    float: left;
 }
 
 .projects__card:hover {
     background-color: var(--container-color);
+}
+
+@media (max-width: 1024px) {
+    .projects__card{
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects__card{
+        width: 100%;
+        margin: 4px 0;
+    }
 }
 
 .projects__image {
@@ -887,6 +1010,22 @@ nav {
 
 .projects__card:hover {
     background-color: var(--white-color);
+}
+
+/* Responsive */
+
+#filterable-cards .projects__card.hide {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #filterable-cards {
+        justify-content: center;
+    }
+
+    #filterable-cards .card {
+        width: calc(100% / 2 - 10px);
+    }
 }
 
 /******************************  Contact  **********************************************/
@@ -1078,11 +1217,23 @@ nav {
 .contact__social-link {
     background-color: var(--black-color-light);
     padding: 6px 10px;
+    width: 45px;
+    height: 45px;
     color: var(--white-color);
     font-size: 1.25rem;
     display: grid;
     place-items: center;
     transition: all .4s;
+}
+
+.contact__social-link a {
+    align-self: center;
+    justify-self: center;
+}
+
+.contact__social-link svg {
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
 .contact__social-link:hover {
@@ -1221,6 +1372,16 @@ footer {
 }
 
 /************* For Medium Devices ******************/
+
+@media screen and (min-width: 1140px) {
+
+    /* Cursor */
+
+    .cursor {
+        display: none;
+    }
+
+}
 
 @media screen and (min-width: 576px) {
 
@@ -1496,7 +1657,7 @@ footer {
         rotate: 30deg;
     }
 
-    .home__shadow{
+    .home__shadow {
         transform-origin: left;
         transform: scaleX(.8);
     }
@@ -1745,4 +1906,3 @@ footer {
         right: 3rem;
     }
 }
-

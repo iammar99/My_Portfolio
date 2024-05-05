@@ -94,9 +94,10 @@ const sr = ScrollReveal({
     reset: 'true'
 });
 
-sr.reveal('.home__profile, .about__image, .contact__email', { origin: 'right' })
-sr.reveal('.home__name, .home__info, .about__container, .section__title-1, .about__info, .contact__social, .contact__data', { origin: 'left' })
-sr.reveal('.services__card, .projects__card, .projects__section-button', { interval: 100 })
+sr.reveal('.home__profile, .about__image', { origin: 'right' })
+sr.reveal('.projects__container', { origin: 'top' })
+sr.reveal('.home__name, .home__info, .about__container, .section__title-1, .about__info', { origin: 'left' })
+sr.reveal('.services__card, .projects__section-button, .tab', { interval: 100 })
 
 
 
@@ -203,3 +204,41 @@ const toastify = () => {
         icon: "error"
     });
 }
+
+/*=============== Projects Navbar ===============*/
+
+document.querySelectorAll('.button').forEach(button => button.addEventListener('click', e => {
+    if (!button.classList.contains('delete')) {
+        button.classList.add('delete');
+        setTimeout(() => button.classList.remove('delete'), 3200);
+    }
+    e.preventDefault();
+}));
+
+$(document).ready(function () {
+    var value = $(this).attr('data-filter');
+
+    if (value == "all") {
+        $('.filter').show('1000');
+    }
+
+    else {
+        $('.filter').not('.' + value).hide('3000');
+        $('.filter').filter('.' + value).show('3000');
+    }
+});
+
+if ($('.filter-button').removeClass('active')) {
+    $(this).removeClass('active');
+}
+
+$(this).addClass('active')
+
+/*=============== CHANGE TITLE WHEN WINDOW IS NOT IS FOCUS ===============*/
+
+    window.addEventListener("blur", () => {
+        document.title = "Come Back 😃";
+    });
+    window.addEventListener("focus", () => {
+        document.title = "document.title";
+    });
