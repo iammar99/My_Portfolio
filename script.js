@@ -33,30 +33,30 @@ const contactForm = document.getElementById('contact-form');
 const contactMessage = document.getElementById('contact-message');
 
 const sendEmail = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
     emailjs.sendForm('service_3g2e9sl', 'template_mfuvswl', '#contact-form', '715ijZbzCUnGRIiLh')
-        .then(() => {
-            // Show an alert when the message is sent successfully
-            Swal.fire({
-                title: "Message Sent!",
-                text: "Thank you for reaching out to us. We appreciate your feedback and inquiries.",
-                icon: "success"
+            .then(() => {
+                // Show an alert when the message is sent successfully
+                Swal.fire({
+                    title: "Message Sent!",
+                    text: "Thank you for reaching out to us. We appreciate your feedback and inquiries.",
+                    icon: "success"
+                });
+
+                setTimeout(() => {
+                    contactMessage.innerHTML = '';
+                }, 5000);
+
+                contactForm.reset();
+            })
+
+            .catch(() => {
+                console.log('Message not sent because of a service problem');
             });
-
-            setTimeout(() => {
-                contactMessage.innerHTML = '';
-            }, 5000);
-
-            contactForm.reset();
-        })
-
-        .catch(() => {
-            window.alert('Message not sent because of a service problem');
-        });
 };
 
-contactForm.addEventListener('submit', sendEmail);
+// contactForm.addEventListener('submit', sendEmail);
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
@@ -99,7 +99,7 @@ sr.reveal('.projects__container', { origin: 'top' })
 sr.reveal('.home__name, .home__info, .about__container, .section__title-1, .about__info', { origin: 'left' })
 sr.reveal('.services__card, .projects__section-button, .tab', { interval: 100 })
 
-
+/*=============== CURSOR ANIMATION ===============*/
 
 const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circle");
@@ -236,9 +236,9 @@ $(this).addClass('active')
 
 /*=============== CHANGE TITLE WHEN WINDOW IS NOT IS FOCUS ===============*/
 
-    window.addEventListener("blur", () => {
-        document.title = "Come Back 😃";
-    });
-    window.addEventListener("focus", () => {
-        document.title = "document.title";
-    });
+window.addEventListener("blur", () => {
+    document.title = "Come Back 😃";
+});
+window.addEventListener("focus", () => {
+    document.title = "document.title";
+});

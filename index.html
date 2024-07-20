@@ -113,7 +113,7 @@
 
             <div class="nav__buttons">
                 <!-- Dark Mode Button -->
-                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <i class="ri-moon-line change-theme me-3" id="theme-button"></i>
 
                 <!-- Toggle Button -->
                 <div class="nav__toggle" id="nav-toggle">
@@ -131,6 +131,7 @@
     <main class="main" id="main">
 
         <!--------------------------- Home ---------------------------------->
+
         <section class="home section" id="home">
 
             <div class="home__container container grid">
@@ -181,7 +182,7 @@
                             <i class="ri-github-line"></i>
                         </a>
 
-                        <a href="https://leetcode.com/u/ammarbashaar99/" target="_blank" class="home__social-link">
+                        <a href="https://leetcode.com/u/iammar911/" target="_blank" class="home__social-link">
 
                             <svg fill="#ffffff" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"
                                 stroke="#ffffff" stroke-width="0.00024000000000000003">
@@ -220,6 +221,7 @@
         </section>
 
         <!--------------------------- about ---------------------------------->
+
         <section class="about section" id="about">
 
             <div class="about__container container grid">
@@ -276,6 +278,7 @@
         </section>
 
         <!--------------------------- services ---------------------------------->
+
         <section class="services section" id="services">
 
             <h2 class="section__title-2">
@@ -409,6 +412,34 @@
 
                     <div class="projects__buttons">
                         <a href="https://hackathon-1320.surge.sh/" target="_blank" class="projects__link">
+                            <i class="ri-chrome-line"></i> View
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Car Bot Service -->
+
+                <article class="projects__card hackathon" data-name="hackathon">
+                    <div class="projects__image">
+                        <img src="Assets/carBotService.jpg" alt="img" class="projects__img">
+
+                        <a class="projects__button button" target="_blank" href="https://car-service-bot.surge.sh/">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">Website</h3>
+                        <h2 class="projects__title">Car Service Bot</h2>
+
+                        <p class="projects__description">
+                            Designed intuitive frontend for Car Service Bot, streamlining booking processes and
+                            enhancing user experience with seamless interface and efficient functionality.
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://car-service-bot.surge.sh/" target="_blank" class="projects__link">
                             <i class="ri-chrome-line"></i> View
                         </a>
                     </div>
@@ -569,6 +600,7 @@
         </section>
 
         <!--------------------------- contact ---------------------------------->
+
         <section class="contact section" id="contact">
 
             <div class="contact__container container grid">
@@ -624,7 +656,7 @@
 
                         <p class="contact__message" id="contact-message"></p>
 
-                        <button type="submit" class="contact__button button" id="contact-button">
+                        <button type="submit" class="contact__button button" id="contact-button" onclick="sendEmail()">
                             <i class="ri-send-plane-line"></i> Send Message
                         </button>
                     </form>
@@ -668,7 +700,7 @@
                                 <i class="ri-github-line"></i>
                             </a>
 
-                            <a href="https://leetcode.com/u/ammarbashaar99/" target="_blank" class="home__social-link">
+                            <a href="https://leetcode.com/u/iammar911/" target="_blank" class="contact__social-link">
 
                                 <svg fill="#ffffff" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"
                                     stroke="#ffffff" stroke-width="0.00024000000000000003">
@@ -790,7 +822,7 @@
     }
 
     filterButtons.forEach(button => button.addEventListener("click", filterCards));
-    
+
 </script>
 
 <script>

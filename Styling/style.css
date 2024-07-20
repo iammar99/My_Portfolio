@@ -297,6 +297,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 .nav__logo {
@@ -1306,7 +1307,7 @@ footer {
 
 .scrollUp {
     position: fixed;
-    right: 1rem;
+    right: 1.5rem;
     bottom: -50%;
     background-color: var(--black-color);
     display: inline-flex;
@@ -1322,7 +1323,7 @@ footer {
 }
 
 .show-scroll {
-    bottom: 3rem;
+    bottom: 1.5rem;
 }
 
 /*************************** BREAKPOINTS (MAKING RESPONSIVE) *****************************/
@@ -1903,6 +1904,6 @@ footer {
     }
 
     .scrollUp {
-        right: 3rem;
+        right: 1.5rem;
     }
 }
