@@ -34,26 +34,38 @@ const contactMessage = document.getElementById('contact-message');
 
 const sendEmail = (e) => {
     // e.preventDefault();
-
+    const fName = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const msg = document.getElementById('message').value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!fName || !email || !subject || !msg || !emailRegex.test(email)) {
+        Swal.fire({
+            title: "Oops...",
+            text: "Please fill the form correctly!",
+            icon: "error"
+        });
+        return
+    }
     emailjs.sendForm('service_3g2e9sl', 'template_mfuvswl', '#contact-form', '715ijZbzCUnGRIiLh')
-            .then(() => {
-                // Show an alert when the message is sent successfully
-                Swal.fire({
-                    title: "Message Sent!",
-                    text: "Thank you for reaching out to us. We appreciate your feedback and inquiries.",
-                    icon: "success"
-                });
-
-                setTimeout(() => {
-                    contactMessage.innerHTML = '';
-                }, 5000);
-
-                contactForm.reset();
-            })
-
-            .catch(() => {
-                console.log('Message not sent because of a service problem');
+        .then(() => {
+            // Show an alert when the message is sent successfully
+            Swal.fire({
+                title: "Message Sent!",
+                text: "Thank you for reaching out to us. We appreciate your feedback and inquiries.",
+                icon: "success"
             });
+
+            setTimeout(() => {
+                contactMessage.innerHTML = '';
+            }, 5000);
+
+            contactForm.reset();
+        })
+
+        .catch(() => {
+            console.log('Message not sent because of a service problem');
+        });
 };
 
 // contactForm.addEventListener('submit', sendEmail);
